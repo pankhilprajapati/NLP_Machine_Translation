@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- saved from url=(0082)https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head><meta charset="utf-8" />
 
 <title>machine_translation</title>
 
-<script src="./require.min.js.download"></script>
-<script src="./jquery.min.js.download"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
 
@@ -13104,13 +13104,13 @@ div#notebook {
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="./custom.css">
+<link rel="stylesheet" href="custom.css">
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="./MathJax.js.download"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
-    <script type="text/x-mathjax-config;executed=true">
+    <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -13127,111 +13127,16 @@ div#notebook {
         }
     });
     </script>
-    <!-- End of mathjax configuration --><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
-.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
-.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
-.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
-.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
-</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-#MathJax_About.MathJax_MousePost {outline: none}
-.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-.MathJax_MenuItem {padding: 2px 2em; background: transparent}
-.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
-.MathJax_MenuActive .MathJax_MenuArrow {color: white}
-.MathJax_MenuArrow.RTL {left: .5em; right: auto}
-.MathJax_MenuCheck {position: absolute; left: .7em}
-.MathJax_MenuCheck.RTL {right: .7em; left: auto}
-.MathJax_MenuRadioCheck {position: absolute; left: 1em}
-.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
-.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
-.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
-.MathJax_MenuDisabled {color: GrayText}
-.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
-.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
-.MathJax_ContextMenu:focus {outline: none}
-.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
-#MathJax_AboutClose {top: .2em; right: .2em}
-.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
-.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
-.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
-.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
-.MathJax_MenuClose:hover span {background-color: #CCC!important}
-.MathJax_MenuClose:hover:focus {outline: none}
-</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
-</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
-.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
-</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
-#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
-#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
-</style><style type="text/css">.MathJax_Preview {color: #888}
-#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
-#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
-.MathJax_Error {color: #CC0000; font-style: italic}
-</style><style type="text/css">.MJXp-script {font-size: .8em}
-.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
-.MJXp-bold {font-weight: bold}
-.MJXp-italic {font-style: italic}
-.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-largeop {font-size: 150%}
-.MJXp-largeop.MJXp-int {vertical-align: -.2em}
-.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
-.MJXp-display {display: block; text-align: center; margin: 1em 0}
-.MJXp-math span {display: inline-block}
-.MJXp-box {display: block!important; text-align: center}
-.MJXp-box:after {content: " "}
-.MJXp-rule {display: block!important; margin-top: .1em}
-.MJXp-char {display: block!important}
-.MJXp-mo {margin: 0 .15em}
-.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
-.MJXp-denom {display: inline-table!important; width: 100%}
-.MJXp-denom > * {display: table-row!important}
-.MJXp-surd {vertical-align: top}
-.MJXp-surd > * {display: block!important}
-.MJXp-script-box > *  {display: table!important; height: 50%}
-.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
-.MJXp-script-box > *:last-child > * {vertical-align: bottom}
-.MJXp-script-box > * > * > * {display: block!important}
-.MJXp-mphantom {visibility: hidden}
-.MJXp-munderover {display: inline-table!important}
-.MJXp-over {display: inline-block!important; text-align: center}
-.MJXp-over > * {display: block!important}
-.MJXp-munderover > * {display: table-row!important}
-.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
-.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
-.MJXp-mtr {display: table-row!important}
-.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
-.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
-.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
-.MJXp-mlabeledtr {display: table-row!important}
-.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
-.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
-.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
-.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
-.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
-.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
-.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
-.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
-.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
-.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
-.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
-.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
-.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
-.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
-</style></head>
-<body style="" data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed=""><div id="MathJax_Message" style="display: none;"></div>
+    <!-- End of mathjax configuration --></head>
+<body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Artificial-Intelligence-Nanodegree">Artificial Intelligence Nanodegree<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Artificial-Intelligence-Nanodegree">¶</a></h1><h2 id="Machine-Translation-Project">Machine Translation Project<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Machine-Translation-Project">¶</a></h2><p>In this notebook, sections that end with <strong>'(IMPLEMENTATION)'</strong> in the header indicate that the following blocks of code will require additional functionality which you must provide. Please be sure to read the instructions carefully!</p>
-<h2 id="Introduction">Introduction<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Introduction">¶</a></h2><p>In this notebook, you will build a deep neural network that functions as part of an end-to-end machine translation pipeline. Your completed pipeline will accept English text as input and return the French translation.</p>
+<h1 id="Artificial-Intelligence-Nanodegree">Artificial Intelligence Nanodegree<a class="anchor-link" href="#Artificial-Intelligence-Nanodegree">&#182;</a></h1><h2 id="Machine-Translation-Project">Machine Translation Project<a class="anchor-link" href="#Machine-Translation-Project">&#182;</a></h2><p>In this notebook, sections that end with <strong>'(IMPLEMENTATION)'</strong> in the header indicate that the following blocks of code will require additional functionality which you must provide. Please be sure to read the instructions carefully!</p>
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>In this notebook, you will build a deep neural network that functions as part of an end-to-end machine translation pipeline. Your completed pipeline will accept English text as input and return the French translation.</p>
 <ul>
 <li><strong>Preprocess</strong> - You'll convert text to sequence of integers.</li>
 <li><strong>Models</strong> Create models which accepts a sequence of integers as input and returns a probability distribution over possible translations. After learning about the basic types of neural networks that are often used for machine translation, you will engage in your own investigations, to design your own model!</li>
@@ -13302,7 +13207,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Verify-access-to-the-GPU">Verify access to the GPU<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Verify-access-to-the-GPU">¶</a></h3><p>The following test applies only if you expect to be using a GPU, e.g., while running in a Udacity Workspace or using an AWS instance with GPU support. Run the next cell, and verify that the device_type is "GPU".</p>
+<h3 id="Verify-access-to-the-GPU">Verify access to the GPU<a class="anchor-link" href="#Verify-access-to-the-GPU">&#182;</a></h3><p>The following test applies only if you expect to be using a GPU, e.g., while running in a Udacity Workspace or using an AWS instance with GPU support. Run the next cell, and verify that the device_type is "GPU".</p>
 <ul>
 <li>If the device is not GPU &amp; you are running from a Udacity Workspace, then save your workspace with the icon at the top, then click "enable" at the bottom of the workspace.</li>
 <li>If the device is not GPU &amp; you are running from an AWS instance, then refer to the cloud computing instructions in the classroom to verify your setup steps.</li>
@@ -13334,20 +13239,20 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[name: "/cpu:0"
-device_type: "CPU"
+<pre>[name: &#34;/cpu:0&#34;
+device_type: &#34;CPU&#34;
 memory_limit: 268435456
 locality {
 }
-incarnation: 681926804621280703
-, name: "/gpu:0"
-device_type: "GPU"
-memory_limit: 357302272
+incarnation: 17547785517809108668
+, name: &#34;/gpu:0&#34;
+device_type: &#34;GPU&#34;
+memory_limit: 357564416
 locality {
   bus_id: 1
 }
-incarnation: 2533144619349783203
-physical_device_desc: "device: 0, name: Tesla K80, pci bus id: 0000:00:04.0"
+incarnation: 5828810878461932669
+physical_device_desc: &#34;device: 0, name: Tesla K80, pci bus id: 0000:00:04.0&#34;
 ]
 </pre>
 </div>
@@ -13360,8 +13265,8 @@ physical_device_desc: "device: 0, name: Tesla K80, pci bus id: 0000:00:04.0"
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Dataset">Dataset<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Dataset">¶</a></h2><p>We begin by investigating the dataset that will be used to train and evaluate your pipeline.  The most common datasets used for machine translation are from <a href="http://www.statmt.org/">WMT</a>.  However, that will take a long time to train a neural network on.  We'll be using a dataset we created for this project that contains a small vocabulary.  You'll be able to train your model in a reasonable time with this dataset.</p>
-<h3 id="Load-Data">Load Data<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Load-Data">¶</a></h3><p>The data is located in <code>data/small_vocab_en</code> and <code>data/small_vocab_fr</code>. The <code>small_vocab_en</code> file contains English sentences with their French translations in the <code>small_vocab_fr</code> file. Load the English and French data from these files from running the cell below.</p>
+<h2 id="Dataset">Dataset<a class="anchor-link" href="#Dataset">&#182;</a></h2><p>We begin by investigating the dataset that will be used to train and evaluate your pipeline.  The most common datasets used for machine translation are from <a href="http://www.statmt.org/">WMT</a>.  However, that will take a long time to train a neural network on.  We'll be using a dataset we created for this project that contains a small vocabulary.  You'll be able to train your model in a reasonable time with this dataset.</p>
+<h3 id="Load-Data">Load Data<a class="anchor-link" href="#Load-Data">&#182;</a></h3><p>The data is located in <code>data/small_vocab_en</code> and <code>data/small_vocab_fr</code>. The <code>small_vocab_en</code> file contains English sentences with their French translations in the <code>small_vocab_fr</code> file. Load the English and French data from these files from running the cell below.</p>
 
 </div>
 </div>
@@ -13372,11 +13277,11 @@ physical_device_desc: "device: 0, name: Tesla K80, pci bus id: 0000:00:04.0"
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load English data</span>
-<span class="n">english_sentences</span> <span class="o">=</span> <span class="n">helper</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="s1">'data/small_vocab_en'</span><span class="p">)</span>
+<span class="n">english_sentences</span> <span class="o">=</span> <span class="n">helper</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="s1">&#39;data/small_vocab_en&#39;</span><span class="p">)</span>
 <span class="c1"># Load French data</span>
-<span class="n">french_sentences</span> <span class="o">=</span> <span class="n">helper</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="s1">'data/small_vocab_fr'</span><span class="p">)</span>
+<span class="n">french_sentences</span> <span class="o">=</span> <span class="n">helper</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="s1">&#39;data/small_vocab_fr&#39;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Dataset Loaded'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dataset Loaded&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13405,7 +13310,7 @@ physical_device_desc: "device: 0, name: Tesla K80, pci bus id: 0000:00:04.0"
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Files">Files<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Files">¶</a></h3><p>Each line in <code>small_vocab_en</code> contains an English sentence with the respective translation in each line of <code>small_vocab_fr</code>.  View the first two lines from each file.</p>
+<h3 id="Files">Files<a class="anchor-link" href="#Files">&#182;</a></h3><p>Each line in <code>small_vocab_en</code> contains an English sentence with the respective translation in each line of <code>small_vocab_fr</code>.  View the first two lines from each file.</p>
 
 </div>
 </div>
@@ -13416,8 +13321,8 @@ physical_device_desc: "device: 0, name: Tesla K80, pci bus id: 0000:00:04.0"
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">sample_i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'small_vocab_en Line </span><span class="si">{}</span><span class="s1">:  </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sample_i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">english_sentences</span><span class="p">[</span><span class="n">sample_i</span><span class="p">]))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'small_vocab_fr Line </span><span class="si">{}</span><span class="s1">:  </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sample_i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">french_sentences</span><span class="p">[</span><span class="n">sample_i</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;small_vocab_en Line </span><span class="si">{}</span><span class="s1">:  </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sample_i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">english_sentences</span><span class="p">[</span><span class="n">sample_i</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;small_vocab_fr Line </span><span class="si">{}</span><span class="s1">:  </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sample_i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">french_sentences</span><span class="p">[</span><span class="n">sample_i</span><span class="p">]))</span>
 </pre></div>
 
     </div>
@@ -13435,7 +13340,7 @@ physical_device_desc: "device: 0, name: Tesla K80, pci bus id: 0000:00:04.0"
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>small_vocab_en Line 1:  new jersey is sometimes quiet during autumn , and it is snowy in april .
-small_vocab_fr Line 1:  new jersey est parfois calme pendant l' automne , et il est neigeux en avril .
+small_vocab_fr Line 1:  new jersey est parfois calme pendant l&#39; automne , et il est neigeux en avril .
 small_vocab_en Line 2:  the united states is usually chilly during july , and it is usually freezing in november .
 small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et il gèle habituellement en novembre .
 </pre>
@@ -13450,7 +13355,7 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>From looking at the sentences, you can see they have been preprocessed already.  The puncuations have been delimited using spaces. All the text have been converted to lowercase.  This should save you some time, but the text requires more preprocessing.</p>
-<h3 id="Vocabulary">Vocabulary<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Vocabulary">¶</a></h3><p>The complexity of the problem is determined by the complexity of the vocabulary.  A more complex vocabulary is a more complex problem.  Let's look at the complexity of the dataset we'll be working with.</p>
+<h3 id="Vocabulary">Vocabulary<a class="anchor-link" href="#Vocabulary">&#182;</a></h3><p>The complexity of the problem is determined by the complexity of the vocabulary.  A more complex vocabulary is a more complex problem.  Let's look at the complexity of the dataset we'll be working with.</p>
 
 </div>
 </div>
@@ -13463,15 +13368,15 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">english_words_counter</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">([</span><span class="n">word</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">english_sentences</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()])</span>
 <span class="n">french_words_counter</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">([</span><span class="n">word</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">french_sentences</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()])</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="si">{}</span><span class="s1"> English words.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">([</span><span class="n">word</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">english_sentences</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()])))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="si">{}</span><span class="s1"> unique English words.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">english_words_counter</span><span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'10 Most common words in the English dataset:'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'"'</span> <span class="o">+</span> <span class="s1">'" "'</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">english_words_counter</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">10</span><span class="p">)))[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s1">'"'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> English words.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">([</span><span class="n">word</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">english_sentences</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()])))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> unique English words.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">english_words_counter</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;10 Most common words in the English dataset:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span> <span class="o">+</span> <span class="s1">&#39;&quot; &quot;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">english_words_counter</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">10</span><span class="p">)))[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="si">{}</span><span class="s1"> French words.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">([</span><span class="n">word</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">french_sentences</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()])))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="si">{}</span><span class="s1"> unique French words.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">french_words_counter</span><span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'10 Most common words in the French dataset:'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'"'</span> <span class="o">+</span> <span class="s1">'" "'</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">french_words_counter</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">10</span><span class="p">)))[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s1">'"'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> French words.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">([</span><span class="n">word</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">french_sentences</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()])))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> unique French words.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">french_words_counter</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;10 Most common words in the French dataset:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span> <span class="o">+</span> <span class="s1">&#39;&quot; &quot;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">french_words_counter</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">10</span><span class="p">)))[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13491,12 +13396,12 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 <pre>1823250 English words.
 227 unique English words.
 10 Most common words in the English dataset:
-"is" "," "." "in" "it" "during" "the" "but" "and" "sometimes"
+&#34;is&#34; &#34;,&#34; &#34;.&#34; &#34;in&#34; &#34;it&#34; &#34;during&#34; &#34;the&#34; &#34;but&#34; &#34;and&#34; &#34;sometimes&#34;
 
 1961295 French words.
 355 unique French words.
 10 Most common words in the French dataset:
-"est" "." "," "en" "il" "les" "mais" "et" "la" "parfois"
+&#34;est&#34; &#34;.&#34; &#34;,&#34; &#34;en&#34; &#34;il&#34; &#34;les&#34; &#34;mais&#34; &#34;et&#34; &#34;la&#34; &#34;parfois&#34;
 </pre>
 </div>
 </div>
@@ -13509,13 +13414,13 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For comparison, <em>Alice's Adventures in Wonderland</em> contains 2,766 unique words of a total of 15,500 words.</p>
-<h2 id="Preprocess">Preprocess<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Preprocess">¶</a></h2><p>For this project, you won't use text data as input to your model. Instead, you'll convert the text into sequences of integers using the following preprocess methods:</p>
+<h2 id="Preprocess">Preprocess<a class="anchor-link" href="#Preprocess">&#182;</a></h2><p>For this project, you won't use text data as input to your model. Instead, you'll convert the text into sequences of integers using the following preprocess methods:</p>
 <ol>
 <li>Tokenize the words into ids</li>
 <li>Add padding to make all the sequences the same length.</li>
 </ol>
 <p>Time to start preprocessing the data...</p>
-<h3 id="Tokenize-(IMPLEMENTATION)">Tokenize (IMPLEMENTATION)<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Tokenize-(IMPLEMENTATION)">¶</a></h3><p>For a neural network to predict on text data, it first has to be turned into data it can understand. Text data like "dog" is a sequence of ASCII character encodings.  Since a neural network is a series of multiplication and addition operations, the input data needs to be number(s).</p>
+<h3 id="Tokenize-(IMPLEMENTATION)">Tokenize (IMPLEMENTATION)<a class="anchor-link" href="#Tokenize-(IMPLEMENTATION)">&#182;</a></h3><p>For a neural network to predict on text data, it first has to be turned into data it can understand. Text data like "dog" is a sequence of ASCII character encodings.  Since a neural network is a series of multiplication and addition operations, the input data needs to be number(s).</p>
 <p>We can turn each character into a number or each word into a number.  These are called character and word ids, respectively.  Character ids are used for character level models that generate text predictions for each character.  A word level model uses word ids that generate text predictions for each word.  Word level models tend to learn better, since they are lower in complexity, so we'll use those.</p>
 <p>Turn each sentence into a sequence of words ids using Keras's <a href="https://keras.io/preprocessing/text/#tokenizer"><code>Tokenizer</code></a> function. Use this function to tokenize <code>english_sentences</code> and <code>french_sentences</code> in the cell below.</p>
 <p>Running the cell will run <code>tokenize</code> on sample data and show output for debugging.</p>
@@ -13529,11 +13434,11 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">tokenize</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="sd">"""</span>
+    <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Tokenize x</span>
 <span class="sd">    :param x: List of sentences/strings to be tokenized</span>
 <span class="sd">    :return: Tuple of (tokenized x data, tokenizer used to tokenize x)</span>
-<span class="sd">    """</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement</span>
     <span class="n">tokenizer</span> <span class="o">=</span> <span class="n">Tokenizer</span><span class="p">()</span>
     <span class="n">tokenizer</span><span class="o">.</span><span class="n">fit_on_texts</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -13543,16 +13448,16 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 
 <span class="c1"># Tokenize Example output</span>
 <span class="n">text_sentences</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s1">'The quick brown fox jumps over the lazy dog .'</span><span class="p">,</span>
-    <span class="s1">'By Jove , my quick study of lexicography won a prize .'</span><span class="p">,</span>
-    <span class="s1">'This is a short sentence .'</span><span class="p">]</span>
+    <span class="s1">&#39;The quick brown fox jumps over the lazy dog .&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;By Jove , my quick study of lexicography won a prize .&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;This is a short sentence .&#39;</span><span class="p">]</span>
 <span class="n">text_tokenized</span><span class="p">,</span> <span class="n">text_tokenizer</span> <span class="o">=</span> <span class="n">tokenize</span><span class="p">(</span><span class="n">text_sentences</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">text_tokenizer</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">sample_i</span><span class="p">,</span> <span class="p">(</span><span class="n">sent</span><span class="p">,</span> <span class="n">token_sent</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">text_sentences</span><span class="p">,</span> <span class="n">text_tokenized</span><span class="p">)):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'Sequence </span><span class="si">{}</span><span class="s1"> in x'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sample_i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'  Input:  </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sent</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'  Output: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">token_sent</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sequence </span><span class="si">{}</span><span class="s1"> in x&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sample_i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  Input:  </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sent</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  Output: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">token_sent</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13569,7 +13474,7 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{'the': 1, 'quick': 2, 'a': 3, 'brown': 4, 'fox': 5, 'jumps': 6, 'over': 7, 'lazy': 8, 'dog': 9, 'by': 10, 'jove': 11, 'my': 12, 'study': 13, 'of': 14, 'lexicography': 15, 'won': 16, 'prize': 17, 'this': 18, 'is': 19, 'short': 20, 'sentence': 21}
+<pre>{&#39;the&#39;: 1, &#39;quick&#39;: 2, &#39;a&#39;: 3, &#39;brown&#39;: 4, &#39;fox&#39;: 5, &#39;jumps&#39;: 6, &#39;over&#39;: 7, &#39;lazy&#39;: 8, &#39;dog&#39;: 9, &#39;by&#39;: 10, &#39;jove&#39;: 11, &#39;my&#39;: 12, &#39;study&#39;: 13, &#39;of&#39;: 14, &#39;lexicography&#39;: 15, &#39;won&#39;: 16, &#39;prize&#39;: 17, &#39;this&#39;: 18, &#39;is&#39;: 19, &#39;short&#39;: 20, &#39;sentence&#39;: 21}
 
 Sequence 1 in x
   Input:  The quick brown fox jumps over the lazy dog .
@@ -13591,7 +13496,7 @@ Sequence 3 in x
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Padding-(IMPLEMENTATION)">Padding (IMPLEMENTATION)<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Padding-(IMPLEMENTATION)">¶</a></h3><p>When batching the sequence of word ids together, each sequence needs to be the same length.  Since sentences are dynamic in length, we can add padding to the end of the sequences to make them the same length.</p>
+<h3 id="Padding-(IMPLEMENTATION)">Padding (IMPLEMENTATION)<a class="anchor-link" href="#Padding-(IMPLEMENTATION)">&#182;</a></h3><p>When batching the sequence of word ids together, each sequence needs to be the same length.  Since sentences are dynamic in length, we can add padding to the end of the sequences to make them the same length.</p>
 <p>Make sure all the English sequences have the same length and all the French sequences have the same length by adding padding to the <strong>end</strong> of each sequence using Keras's <a href="https://keras.io/preprocessing/sequence/#pad_sequences"><code>pad_sequences</code></a> function.</p>
 
 </div>
@@ -13603,24 +13508,24 @@ Sequence 3 in x
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pad</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-    <span class="sd">"""</span>
+    <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Pad x</span>
 <span class="sd">    :param x: List of sequences.</span>
 <span class="sd">    :param length: Length to pad the sequence to.  If None, use length of longest sequence in x.</span>
 <span class="sd">    :return: Padded numpy array of sequences</span>
-<span class="sd">    """</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement</span>
     <span class="k">if</span> <span class="n">length</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">length</span> <span class="o">=</span> <span class="nb">max</span><span class="p">([</span><span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">x</span><span class="p">])</span>
-    <span class="k">return</span> <span class="n">pad_sequences</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">maxlen</span><span class="o">=</span><span class="n">length</span><span class="p">,</span><span class="n">padding</span><span class="o">=</span><span class="s1">'post'</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">pad_sequences</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">maxlen</span><span class="o">=</span><span class="n">length</span><span class="p">,</span><span class="n">padding</span><span class="o">=</span><span class="s1">&#39;post&#39;</span><span class="p">)</span>
 <span class="n">tests</span><span class="o">.</span><span class="n">test_pad</span><span class="p">(</span><span class="n">pad</span><span class="p">)</span>
 
 <span class="c1"># Pad Tokenized output</span>
 <span class="n">test_pad</span> <span class="o">=</span> <span class="n">pad</span><span class="p">(</span><span class="n">text_tokenized</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">sample_i</span><span class="p">,</span> <span class="p">(</span><span class="n">token_sent</span><span class="p">,</span> <span class="n">pad_sent</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">text_tokenized</span><span class="p">,</span> <span class="n">test_pad</span><span class="p">)):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'Sequence </span><span class="si">{}</span><span class="s1"> in x'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sample_i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'  Input:  </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">token_sent</span><span class="p">)))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'  Output: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pad_sent</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sequence </span><span class="si">{}</span><span class="s1"> in x&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sample_i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  Input:  </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">token_sent</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  Output: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pad_sent</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13657,7 +13562,7 @@ Sequence 3 in x
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Preprocess-Pipeline">Preprocess Pipeline<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Preprocess-Pipeline">¶</a></h3><p>Your focus for this project is to build neural network architecture, so we won't ask you to create a preprocess pipeline.  Instead, we've provided you with the implementation of the <code>preprocess</code> function.</p>
+<h3 id="Preprocess-Pipeline">Preprocess Pipeline<a class="anchor-link" href="#Preprocess-Pipeline">&#182;</a></h3><p>Your focus for this project is to build neural network architecture, so we won't ask you to create a preprocess pipeline.  Instead, we've provided you with the implementation of the <code>preprocess</code> function.</p>
 
 </div>
 </div>
@@ -13668,19 +13573,19 @@ Sequence 3 in x
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">preprocess</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-    <span class="sd">"""</span>
+    <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Preprocess x and y</span>
 <span class="sd">    :param x: Feature List of sentences</span>
 <span class="sd">    :param y: Label List of sentences</span>
 <span class="sd">    :return: Tuple of (Preprocessed x, Preprocessed y, x tokenizer, y tokenizer)</span>
-<span class="sd">    """</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">preprocess_x</span><span class="p">,</span> <span class="n">x_tk</span> <span class="o">=</span> <span class="n">tokenize</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
     <span class="n">preprocess_y</span><span class="p">,</span> <span class="n">y_tk</span> <span class="o">=</span> <span class="n">tokenize</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 
     <span class="n">preprocess_x</span> <span class="o">=</span> <span class="n">pad</span><span class="p">(</span><span class="n">preprocess_x</span><span class="p">)</span>
     <span class="n">preprocess_y</span> <span class="o">=</span> <span class="n">pad</span><span class="p">(</span><span class="n">preprocess_y</span><span class="p">)</span>
 
-    <span class="c1"># Keras's sparse_categorical_crossentropy function requires the labels to be in 3 dimensions</span>
+    <span class="c1"># Keras&#39;s sparse_categorical_crossentropy function requires the labels to be in 3 dimensions</span>
     <span class="n">preprocess_y</span> <span class="o">=</span> <span class="n">preprocess_y</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">*</span><span class="n">preprocess_y</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">preprocess_x</span><span class="p">,</span> <span class="n">preprocess_y</span><span class="p">,</span> <span class="n">x_tk</span><span class="p">,</span> <span class="n">y_tk</span>
@@ -13693,11 +13598,11 @@ Sequence 3 in x
 <span class="n">english_vocab_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">english_tokenizer</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span>
 <span class="n">french_vocab_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">french_tokenizer</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Data Preprocessed'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Max English sentence length:"</span><span class="p">,</span> <span class="n">max_english_sequence_length</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Max French sentence length:"</span><span class="p">,</span> <span class="n">max_french_sequence_length</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"English vocabulary size:"</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"French vocabulary size:"</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Data Preprocessed&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Max English sentence length:&quot;</span><span class="p">,</span> <span class="n">max_english_sequence_length</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Max French sentence length:&quot;</span><span class="p">,</span> <span class="n">max_french_sequence_length</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;English vocabulary size:&quot;</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;French vocabulary size:&quot;</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13730,7 +13635,7 @@ French vocabulary size: 344
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Models">Models<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Models">¶</a></h2><p>In this section, you will experiment with various neural network architectures.
+<h2 id="Models">Models<a class="anchor-link" href="#Models">&#182;</a></h2><p>In this section, you will experiment with various neural network architectures.
 You will begin by training four relatively simple architectures.</p>
 <ul>
 <li>Model 1 is a simple RNN</li>
@@ -13739,29 +13644,29 @@ You will begin by training four relatively simple architectures.</p>
 <li>Model 4 is an optional Encoder-Decoder RNN</li>
 </ul>
 <p>After experimenting with the four simple architectures, you will construct a deeper architecture that is designed to outperform all four models.</p>
-<h3 id="Ids-Back-to-Text">Ids Back to Text<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Ids-Back-to-Text">¶</a></h3><p>The neural network will be translating the input to words ids, which isn't the final form we want.  We want the French translation.  The function <code>logits_to_text</code> will bridge the gab between the logits from the neural network to the French translation.  You'll be using this function to better understand the output of the neural network.</p>
+<h3 id="Ids-Back-to-Text">Ids Back to Text<a class="anchor-link" href="#Ids-Back-to-Text">&#182;</a></h3><p>The neural network will be translating the input to words ids, which isn't the final form we want.  We want the French translation.  The function <code>logits_to_text</code> will bridge the gab between the logits from the neural network to the French translation.  You'll be using this function to better understand the output of the neural network.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">logits_to_text</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="n">tokenizer</span><span class="p">):</span>
-    <span class="sd">"""</span>
+    <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Turn logits from a neural network into text using the tokenizer</span>
 <span class="sd">    :param logits: Logits from a neural network</span>
 <span class="sd">    :param tokenizer: Keras Tokenizer fit on the labels</span>
 <span class="sd">    :return: String that represents the text of the logits</span>
-<span class="sd">    """</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">index_to_words</span> <span class="o">=</span> <span class="p">{</span><span class="nb">id</span><span class="p">:</span> <span class="n">word</span> <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="nb">id</span> <span class="ow">in</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">word_index</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
-    <span class="n">index_to_words</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'&lt;PAD&gt;'</span>
+    <span class="n">index_to_words</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&lt;PAD&gt;&#39;</span>
 
-    <span class="k">return</span> <span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">index_to_words</span><span class="p">[</span><span class="n">prediction</span><span class="p">]</span> <span class="k">for</span> <span class="n">prediction</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
+    <span class="k">return</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">index_to_words</span><span class="p">[</span><span class="n">prediction</span><span class="p">]</span> <span class="k">for</span> <span class="n">prediction</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">'`logits_to_text` function loaded.'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;`logits_to_text` function loaded.&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13790,7 +13695,7 @@ You will begin by training four relatively simple architectures.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Model-1:-RNN-(IMPLEMENTATION)">Model 1: RNN (IMPLEMENTATION)<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Model-1:-RNN-(IMPLEMENTATION)">¶</a></h3><p><img src="./rnn.png" alt="RNN">
+<h3 id="Model-1:-RNN-(IMPLEMENTATION)">Model 1: RNN (IMPLEMENTATION)<a class="anchor-link" href="#Model-1:-RNN-(IMPLEMENTATION)">&#182;</a></h3><p><img src="images/rnn.png" alt="RNN">
 A basic RNN model is a good baseline for sequence data.  In this model, you'll build a RNN that translates English to French.</p>
 
 </div>
@@ -13802,24 +13707,24 @@ A basic RNN model is a good baseline for sequence data.  In this model, you'll b
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">simple_model</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
-    <span class="sd">"""</span>
+    <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Build and train a basic RNN on x and y</span>
 <span class="sd">    :param input_shape: Tuple of input shape</span>
 <span class="sd">    :param output_sequence_length: Length of output sequence</span>
 <span class="sd">    :param english_vocab_size: Number of unique English words in the dataset</span>
 <span class="sd">    :param french_vocab_size: Number of unique French words in the dataset</span>
 <span class="sd">    :return: Keras model built, but not trained</span>
-<span class="sd">    """</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Build the layers</span>
     <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.006</span>
     <span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">GRU</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span><span class="n">input_shape</span> <span class="o">=</span> <span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span><span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">english_vocab_size</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">'relu'</span><span class="p">)))</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">english_vocab_size</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">'softmax'</span><span class="p">)))</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="n">sparse_categorical_crossentropy</span><span class="p">,</span>
                   <span class="n">optimizer</span><span class="o">=</span><span class="n">Adam</span><span class="p">(</span><span class="n">learning_rate</span><span class="p">),</span>
-                  <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">'accuracy'</span><span class="p">])</span>
+                  <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
     <span class="k">return</span> <span class="n">model</span>
 <span class="n">tests</span><span class="o">.</span><span class="n">test_simple_model</span><span class="p">(</span><span class="n">simple_model</span><span class="p">)</span>
 
@@ -13910,13 +13815,13 @@ new jersey est parfois humide en mois de il et est est en &lt;PAD&gt; &lt;PAD&gt
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Prediction:"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prediction:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">logits_to_text</span><span class="p">(</span><span class="n">simple_rnn_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">[:</span><span class="mi">1</span><span class="p">])[</span><span class="mi">0</span><span class="p">],</span> <span class="n">french_tokenizer</span><span class="p">))</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Correct Translation:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Correct Translation:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">french_sentences</span><span class="p">[:</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Original text:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Original text:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">english_sentences</span><span class="p">[:</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
@@ -13938,7 +13843,7 @@ new jersey est parfois humide en mois de il et est est en &lt;PAD&gt; &lt;PAD&gt
 new jersey est parfois humide en mois de il et est est en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 
 Correct Translation:
-new jersey est parfois calme pendant l' automne , et il est neigeux en avril .
+new jersey est parfois calme pendant l&#39; automne , et il est neigeux en avril .
 
 Original text:
 new jersey is sometimes quiet during autumn , and it is snowy in april .
@@ -13953,7 +13858,7 @@ new jersey is sometimes quiet during autumn , and it is snowy in april .
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Model-2:-Embedding-(IMPLEMENTATION)">Model 2: Embedding (IMPLEMENTATION)<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Model-2:-Embedding-(IMPLEMENTATION)">¶</a></h3><p><img src="./embedding.png" alt="RNN">
+<h3 id="Model-2:-Embedding-(IMPLEMENTATION)">Model 2: Embedding (IMPLEMENTATION)<a class="anchor-link" href="#Model-2:-Embedding-(IMPLEMENTATION)">&#182;</a></h3><p><img src="images/embedding.png" alt="RNN">
 You've turned the words into ids, but there's a better representation of a word.  This is called word embeddings.  An embedding is a vector representation of the word that is close to similar words in n-dimensional space, where the n represents the size of the embedding vectors.</p>
 <p>In this model, you'll create a RNN model using embedding.</p>
 
@@ -13966,25 +13871,25 @@ You've turned the words into ids, but there's a better representation of a word.
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">embed_model</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
-    <span class="sd">"""</span>
+    <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Build and train a RNN model using word embedding on x and y</span>
 <span class="sd">    :param input_shape: Tuple of input shape</span>
 <span class="sd">    :param output_sequence_length: Length of output sequence</span>
 <span class="sd">    :param english_vocab_size: Number of unique English words in the dataset</span>
 <span class="sd">    :param french_vocab_size: Number of unique French words in the dataset</span>
 <span class="sd">    :return: Keras model built, but not trained</span>
-<span class="sd">    """</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement</span>
     <span class="n">lr</span> <span class="o">=</span> <span class="mf">0.006</span>
     <span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Embedding</span><span class="p">(</span><span class="n">english_vocab_size</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="n">input_length</span> <span class="o">=</span> <span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">input_shape</span><span class="o">=</span><span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:]))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">GRU</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span><span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">english_vocab_size</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">'relu'</span><span class="p">)))</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">english_vocab_size</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">'softmax'</span><span class="p">)))</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="n">sparse_categorical_crossentropy</span><span class="p">,</span>
                   <span class="n">optimizer</span><span class="o">=</span><span class="n">Adam</span><span class="p">(</span><span class="n">lr</span><span class="p">),</span>
-                  <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">'accuracy'</span><span class="p">])</span>
+                  <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
     <span class="k">return</span> <span class="n">model</span>
 <span class="n">tests</span><span class="o">.</span><span class="n">test_embed_model</span><span class="p">(</span><span class="n">embed_model</span><span class="p">)</span>
 
@@ -14057,7 +13962,7 @@ Epoch 9/10
 110288/110288 [==============================] - 14s 127us/step - loss: 0.2087 - acc: 0.9297 - val_loss: 0.1902 - val_acc: 0.9348
 Epoch 10/10
 110288/110288 [==============================] - 14s 127us/step - loss: 0.1970 - acc: 0.9326 - val_loss: 0.1888 - val_acc: 0.9350
-new jersey est parfois calme en l' automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+new jersey est parfois calme en l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
 </div>
@@ -14072,13 +13977,13 @@ new jersey est parfois calme en l' automne et il est neigeux en avril &lt;PAD&gt
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Print prediction(s)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Prediction:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prediction:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">logits_to_text</span><span class="p">(</span><span class="n">embed_rnn_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">[:</span><span class="mi">1</span><span class="p">])[</span><span class="mi">0</span><span class="p">],</span> <span class="n">french_tokenizer</span><span class="p">))</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Correct Translation:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Correct Translation:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">french_sentences</span><span class="p">[:</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Original text:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Original text:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">english_sentences</span><span class="p">[:</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
@@ -14097,10 +14002,10 @@ new jersey est parfois calme en l' automne et il est neigeux en avril &lt;PAD&gt
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Prediction:
-new jersey est parfois calme en l' automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+new jersey est parfois calme en l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 
 Correct Translation:
-new jersey est parfois calme pendant l' automne , et il est neigeux en avril .
+new jersey est parfois calme pendant l&#39; automne , et il est neigeux en avril .
 
 Original text:
 new jersey is sometimes quiet during autumn , and it is snowy in april .
@@ -14115,7 +14020,7 @@ new jersey is sometimes quiet during autumn , and it is snowy in april .
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Model-3:-Bidirectional-RNNs-(IMPLEMENTATION)">Model 3: Bidirectional RNNs (IMPLEMENTATION)<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Model-3:-Bidirectional-RNNs-(IMPLEMENTATION)">¶</a></h3><p><img src="./bidirectional.png" alt="RNN">
+<h3 id="Model-3:-Bidirectional-RNNs-(IMPLEMENTATION)">Model 3: Bidirectional RNNs (IMPLEMENTATION)<a class="anchor-link" href="#Model-3:-Bidirectional-RNNs-(IMPLEMENTATION)">&#182;</a></h3><p><img src="images/bidirectional.png" alt="RNN">
 One restriction of a RNN is that it can't see the future input, only the past.  This is where bidirectional recurrent neural networks come in.  They are able to see the future data.</p>
 
 </div>
@@ -14123,23 +14028,23 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">bd_model</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
-    <span class="sd">"""</span>
+    <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Build and train a bidirectional RNN model on x and y</span>
 <span class="sd">    :param input_shape: Tuple of input shape</span>
 <span class="sd">    :param output_sequence_length: Length of output sequence</span>
 <span class="sd">    :param english_vocab_size: Number of unique English words in the dataset</span>
 <span class="sd">    :param french_vocab_size: Number of unique French words in the dataset</span>
 <span class="sd">    :return: Keras model built, but not trained</span>
-<span class="sd">    """</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement</span>
     <span class="n">lr</span> <span class="o">=</span> <span class="mf">0.006</span>
     <span class="n">rnn</span> <span class="o">=</span> <span class="n">GRU</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dropout</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
     <span class="n">bidirectional</span><span class="o">=</span><span class="n">Bidirectional</span><span class="p">(</span><span class="n">rnn</span><span class="p">,</span> <span class="n">input_shape</span> <span class="o">=</span> <span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
-    <span class="n">logits</span> <span class="o">=</span> <span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">'softmax'</span><span class="p">))</span>
+    <span class="n">logits</span> <span class="o">=</span> <span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">))</span>
     
     <span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">bidirectional</span><span class="p">)</span>
@@ -14147,7 +14052,7 @@ One restriction of a RNN is that it can't see the future input, only the past.  
     
     <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="n">sparse_categorical_crossentropy</span><span class="p">,</span>
                   <span class="n">optimizer</span><span class="o">=</span><span class="n">Adam</span><span class="p">(</span><span class="n">lr</span><span class="p">),</span>
-                  <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">'accuracy'</span><span class="p">])</span>
+                  <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
     <span class="k">return</span> <span class="n">model</span>
 <span class="n">tests</span><span class="o">.</span><span class="n">test_bd_model</span><span class="p">(</span><span class="n">bd_model</span><span class="p">)</span>
 <span class="n">tmp_x</span> <span class="o">=</span> <span class="n">pad</span><span class="p">(</span><span class="n">preproc_english_sentences</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
@@ -14162,6 +14067,7 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 <span class="n">bd_rnn_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
 
 <span class="c1"># TODO: Train and Print prediction(s)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">logits_to_text</span><span class="p">(</span><span class="n">bd_rnn_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">[:</span><span class="mi">1</span><span class="p">])[</span><span class="mi">0</span><span class="p">],</span> <span class="n">french_tokenizer</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -14181,9 +14087,9 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 <pre>_________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-bidirectional_11 (Bidirectio (None, 21, 512)           396288    
+bidirectional_2 (Bidirection (None, 21, 512)           396288    
 _________________________________________________________________
-time_distributed_32 (TimeDis (None, 21, 345)           176985    
+time_distributed_2 (TimeDist (None, 21, 345)           176985    
 =================================================================
 Total params: 573,273
 Trainable params: 573,273
@@ -14191,40 +14097,28 @@ Non-trainable params: 0
 _________________________________________________________________
 Train on 110288 samples, validate on 27573 samples
 Epoch 1/10
-110288/110288 [==============================] - 19s 170us/step - loss: 1.5624 - acc: 0.6065 - val_loss: 1.1416 - val_acc: 0.6650
+110288/110288 [==============================] - 20s 178us/step - loss: 1.5401 - acc: 0.6100 - val_loss: 1.1172 - val_acc: 0.6684
 Epoch 2/10
-110288/110288 [==============================] - 17s 157us/step - loss: 1.0554 - acc: 0.6784 - val_loss: 0.9635 - val_acc: 0.6922
+110288/110288 [==============================] - 18s 160us/step - loss: 1.0227 - acc: 0.6835 - val_loss: 0.9335 - val_acc: 0.7002
 Epoch 3/10
-110288/110288 [==============================] - 17s 157us/step - loss: 0.9201 - acc: 0.6994 - val_loss: 0.8749 - val_acc: 0.7059
+110288/110288 [==============================] - 18s 160us/step - loss: 0.8933 - acc: 0.7047 - val_loss: 0.8420 - val_acc: 0.7156
 Epoch 4/10
-110288/110288 [==============================] - 17s 158us/step - loss: 0.8452 - acc: 0.7125 - val_loss: 0.8029 - val_acc: 0.7193
+110288/110288 [==============================] - 18s 160us/step - loss: 0.8241 - acc: 0.7164 - val_loss: 0.7878 - val_acc: 0.7257
 Epoch 5/10
-110288/110288 [==============================] - 17s 158us/step - loss: 0.8026 - acc: 0.7201 - val_loss: 0.7959 - val_acc: 0.7163
+110288/110288 [==============================] - 18s 160us/step - loss: 0.7722 - acc: 0.7272 - val_loss: 0.8086 - val_acc: 0.7106
 Epoch 6/10
-110288/110288 [==============================] - 17s 157us/step - loss: 0.7453 - acc: 0.7342 - val_loss: 0.7118 - val_acc: 0.7443
+110288/110288 [==============================] - 18s 160us/step - loss: 0.7284 - acc: 0.7406 - val_loss: 0.7664 - val_acc: 0.7281
 Epoch 7/10
-110288/110288 [==============================] - 17s 158us/step - loss: 0.7191 - acc: 0.7410 - val_loss: 0.7049 - val_acc: 0.7443
+110288/110288 [==============================] - 18s 160us/step - loss: 0.6969 - acc: 0.7545 - val_loss: 0.6660 - val_acc: 0.7678
 Epoch 8/10
-110288/110288 [==============================] - 17s 157us/step - loss: 0.6856 - acc: 0.7517 - val_loss: 0.7252 - val_acc: 0.7369
+110288/110288 [==============================] - 18s 160us/step - loss: 0.6469 - acc: 0.7760 - val_loss: 0.6138 - val_acc: 0.7935
 Epoch 9/10
-110288/110288 [==============================] - 17s 157us/step - loss: 0.6612 - acc: 0.7616 - val_loss: 0.6455 - val_acc: 0.7688
+110288/110288 [==============================] - 18s 160us/step - loss: 0.6128 - acc: 0.7884 - val_loss: 0.5921 - val_acc: 0.7981
 Epoch 10/10
-110288/110288 [==============================] - 17s 158us/step - loss: 0.6359 - acc: 0.7731 - val_loss: 0.6623 - val_acc: 0.7628
+110288/110288 [==============================] - 18s 160us/step - loss: 0.5991 - acc: 0.7948 - val_loss: 0.5429 - val_acc: 0.8179
+new jersey est parfois calme au mois de il est il est en en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[31]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;keras.callbacks.History at 0x7ff921871c88&gt;</pre>
-</div>
-
 </div>
 
 </div>
@@ -14237,13 +14131,13 @@ Epoch 10/10
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Print prediction(s)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Prediction:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prediction:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">logits_to_text</span><span class="p">(</span><span class="n">bd_rnn_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">[:</span><span class="mi">1</span><span class="p">])[</span><span class="mi">0</span><span class="p">],</span> <span class="n">french_tokenizer</span><span class="p">))</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Correct Translation:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Correct Translation:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">french_sentences</span><span class="p">[:</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Original text:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Original text:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">english_sentences</span><span class="p">[:</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
@@ -14265,7 +14159,7 @@ Epoch 10/10
 new jersey est parfois calme au mois de et et il est en en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 
 Correct Translation:
-new jersey est parfois calme pendant l' automne , et il est neigeux en avril .
+new jersey est parfois calme pendant l&#39; automne , et il est neigeux en avril .
 
 Original text:
 new jersey is sometimes quiet during autumn , and it is snowy in april .
@@ -14280,7 +14174,7 @@ new jersey is sometimes quiet during autumn , and it is snowy in april .
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Model-4:-Encoder-Decoder-(OPTIONAL)">Model 4: Encoder-Decoder (OPTIONAL)<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Model-4:-Encoder-Decoder-(OPTIONAL)">¶</a></h3><p>Time to look at encoder-decoder models.  This model is made up of an encoder and decoder. The encoder creates a matrix representation of the sentence.  The decoder takes this matrix as input and predicts the translation as output.</p>
+<h3 id="Model-4:-Encoder-Decoder-(OPTIONAL)">Model 4: Encoder-Decoder (OPTIONAL)<a class="anchor-link" href="#Model-4:-Encoder-Decoder-(OPTIONAL)">&#182;</a></h3><p>Time to look at encoder-decoder models.  This model is made up of an encoder and decoder. The encoder creates a matrix representation of the sentence.  The decoder takes this matrix as input and predicts the translation as output.</p>
 <p>Create an encoder-decoder model in the cell below.</p>
 
 </div>
@@ -14292,26 +14186,26 @@ new jersey is sometimes quiet during autumn , and it is snowy in april .
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">encdec_model</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
-    <span class="sd">"""</span>
+    <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Build and train an encoder-decoder model on x and y</span>
 <span class="sd">    :param input_shape: Tuple of input shape</span>
 <span class="sd">    :param output_sequence_length: Length of output sequence</span>
 <span class="sd">    :param english_vocab_size: Number of unique English words in the dataset</span>
 <span class="sd">    :param french_vocab_size: Number of unique French words in the dataset</span>
 <span class="sd">    :return: Keras model built, but not trained</span>
-<span class="sd">    """</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># OPTIONAL: Implement</span>
     <span class="n">lr</span> <span class="o">=</span> <span class="mf">0.005</span>
     <span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">GRU</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span><span class="n">input_shape</span><span class="o">=</span><span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span><span class="n">go_backwards</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">RepeatVector</span><span class="p">(</span><span class="n">output_sequence_length</span><span class="p">))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">GRU</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span><span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">english_vocab_size</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">'relu'</span><span class="p">)))</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">english_vocab_size</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">'softmax'</span><span class="p">)))</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="n">sparse_categorical_crossentropy</span><span class="p">,</span>
                   <span class="n">optimizer</span><span class="o">=</span><span class="n">Adam</span><span class="p">(</span><span class="n">lr</span><span class="p">),</span>
-                  <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">'accuracy'</span><span class="p">])</span>
+                  <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
     <span class="k">return</span> <span class="n">model</span>
 <span class="n">tests</span><span class="o">.</span><span class="n">test_encdec_model</span><span class="p">(</span><span class="n">encdec_model</span><span class="p">)</span>
 
@@ -14410,13 +14304,13 @@ Epoch 10/10
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Print prediction(s)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Prediction:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prediction:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">logits_to_text</span><span class="p">(</span><span class="n">encdec_rnn_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">[:</span><span class="mi">1</span><span class="p">])[</span><span class="mi">0</span><span class="p">],</span> <span class="n">french_tokenizer</span><span class="p">))</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Correct Translation:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Correct Translation:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">french_sentences</span><span class="p">[:</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Original text:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Original text:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">english_sentences</span><span class="p">[:</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
@@ -14435,10 +14329,10 @@ Epoch 10/10
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Prediction:
-new jersey est parfois froid en l' et il est est en en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+new jersey est parfois froid en l&#39; et il est est en en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 
 Correct Translation:
-new jersey est parfois calme pendant l' automne , et il est neigeux en avril .
+new jersey est parfois calme pendant l&#39; automne , et il est neigeux en avril .
 
 Original text:
 new jersey is sometimes quiet during autumn , and it is snowy in april .
@@ -14453,7 +14347,7 @@ new jersey is sometimes quiet during autumn , and it is snowy in april .
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Model-5:-Custom-(IMPLEMENTATION)">Model 5: Custom (IMPLEMENTATION)<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Model-5:-Custom-(IMPLEMENTATION)">¶</a></h3><p>Use everything you learned from the previous models to create a model that incorporates embedding and a bidirectional rnn into one model.</p>
+<h3 id="Model-5:-Custom-(IMPLEMENTATION)">Model 5: Custom (IMPLEMENTATION)<a class="anchor-link" href="#Model-5:-Custom-(IMPLEMENTATION)">&#182;</a></h3><p>Use everything you learned from the previous models to create a model that incorporates embedding and a bidirectional rnn into one model.</p>
 
 </div>
 </div>
@@ -14464,14 +14358,14 @@ new jersey is sometimes quiet during autumn , and it is snowy in april .
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">model_final</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
-    <span class="sd">"""</span>
+    <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Build and train a model that incorporates embedding, encoder-decoder, and bidirectional RNN on x and y</span>
 <span class="sd">    :param input_shape: Tuple of input shape</span>
 <span class="sd">    :param output_sequence_length: Length of output sequence</span>
 <span class="sd">    :param english_vocab_size: Number of unique English words in the dataset</span>
 <span class="sd">    :param french_vocab_size: Number of unique French words in the dataset</span>
 <span class="sd">    :return: Keras model built, but not trained</span>
-<span class="sd">    """</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement</span>
     <span class="n">lr</span><span class="o">=</span><span class="mf">0.005</span>
     <span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
@@ -14480,17 +14374,17 @@ new jersey is sometimes quiet during autumn , and it is snowy in april .
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">RepeatVector</span><span class="p">(</span><span class="n">output_sequence_length</span><span class="p">))</span>
     
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Bidirectional</span><span class="p">(</span><span class="n">GRU</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span><span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">)))</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">'relu'</span><span class="p">)))</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">'softmax'</span><span class="p">)))</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="n">sparse_categorical_crossentropy</span><span class="p">,</span>
                   <span class="n">optimizer</span><span class="o">=</span><span class="n">Adam</span><span class="p">(</span><span class="n">lr</span><span class="p">),</span>
-                  <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">'accuracy'</span><span class="p">])</span>
+                  <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
     <span class="k">return</span> <span class="n">model</span>
 <span class="n">tests</span><span class="o">.</span><span class="n">test_model_final</span><span class="p">(</span><span class="n">model_final</span><span class="p">)</span>
 
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Final Model Loaded'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Final Model Loaded&#39;</span><span class="p">)</span>
 <span class="c1"># TODO: Train the final model</span>
 </pre></div>
 
@@ -14520,7 +14414,7 @@ new jersey is sometimes quiet during autumn , and it is snowy in april .
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Prediction-(IMPLEMENTATION)">Prediction (IMPLEMENTATION)<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Prediction-(IMPLEMENTATION)">¶</a></h2>
+<h2 id="Prediction-(IMPLEMENTATION)">Prediction (IMPLEMENTATION)<a class="anchor-link" href="#Prediction-(IMPLEMENTATION)">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14530,13 +14424,13 @@ new jersey is sometimes quiet during autumn , and it is snowy in april .
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">final_predictions</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x_tk</span><span class="p">,</span> <span class="n">y_tk</span><span class="p">):</span>
-    <span class="sd">"""</span>
+    <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Gets predictions using the final model</span>
 <span class="sd">    :param x: Preprocessed English data</span>
 <span class="sd">    :param y: Preprocessed French data</span>
 <span class="sd">    :param x_tk: English tokenizer</span>
 <span class="sd">    :param y_tk: French tokenizer</span>
-<span class="sd">    """</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Train neural network using model_final</span>
     <span class="n">model</span> <span class="o">=</span> <span class="n">model_final</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span>
                         <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
@@ -14545,22 +14439,22 @@ new jersey is sometimes quiet during autumn , and it is snowy in april .
     <span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
     <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">batch_size</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
     
-    <span class="c1">## DON'T EDIT ANYTHING BELOW THIS LINE</span>
+    <span class="c1">## DON&#39;T EDIT ANYTHING BELOW THIS LINE</span>
     <span class="n">y_id_to_word</span> <span class="o">=</span> <span class="p">{</span><span class="n">value</span><span class="p">:</span> <span class="n">key</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">y_tk</span><span class="o">.</span><span class="n">word_index</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
-    <span class="n">y_id_to_word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'&lt;PAD&gt;'</span>
+    <span class="n">y_id_to_word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&lt;PAD&gt;&#39;</span>
 
-    <span class="n">sentence</span> <span class="o">=</span> <span class="s1">'he saw a old yellow truck'</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="s1">&#39;he saw a old yellow truck&#39;</span>
     <span class="n">sentence</span> <span class="o">=</span> <span class="p">[</span><span class="n">x_tk</span><span class="o">.</span><span class="n">word_index</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
-    <span class="n">sentence</span> <span class="o">=</span> <span class="n">pad_sequences</span><span class="p">([</span><span class="n">sentence</span><span class="p">],</span> <span class="n">maxlen</span><span class="o">=</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">padding</span><span class="o">=</span><span class="s1">'post'</span><span class="p">)</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="n">pad_sequences</span><span class="p">([</span><span class="n">sentence</span><span class="p">],</span> <span class="n">maxlen</span><span class="o">=</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;post&#39;</span><span class="p">)</span>
     <span class="n">sentences</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">sentence</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
     <span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">sentences</span><span class="p">))</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'Sample 1:'</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">y_id_to_word</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">predictions</span><span class="p">[</span><span class="mi">0</span><span class="p">]]))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'Il a vu un vieux camion jaune'</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'Sample 2:'</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">y_id_to_word</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">predictions</span><span class="p">[</span><span class="mi">1</span><span class="p">]]))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">y_id_to_word</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sample 1:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">y_id_to_word</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">predictions</span><span class="p">[</span><span class="mi">0</span><span class="p">]]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Il a vu un vieux camion jaune&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sample 2:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">y_id_to_word</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">predictions</span><span class="p">[</span><span class="mi">1</span><span class="p">]]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">y_id_to_word</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]]))</span>
 
 
 <span class="n">final_predictions</span><span class="p">(</span><span class="n">preproc_english_sentences</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="p">,</span> <span class="n">english_tokenizer</span><span class="p">,</span> <span class="n">french_tokenizer</span><span class="p">)</span>
@@ -14636,8 +14530,8 @@ Sample 1:
 il a vu un vieux camion jaune &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 Il a vu un vieux camion jaune
 Sample 2:
-new jersey est parfois calme pendant l' automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
-new jersey est parfois calme pendant l' automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
 </div>
@@ -14649,7 +14543,7 @@ new jersey est parfois calme pendant l' automne et il est neigeux en avril &lt;P
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Submission">Submission<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Submission">¶</a></h2><p>When you're ready to submit, complete the following steps:</p>
+<h2 id="Submission">Submission<a class="anchor-link" href="#Submission">&#182;</a></h2><p>When you're ready to submit, complete the following steps:</p>
 <ol>
 <li>Review the <a href="https://review.udacity.com/#!/rubrics/1004/view">rubric</a> to ensure your submission meets all requirements to pass</li>
 <li><p>Generate an HTML version of this notebook</p>
@@ -14684,14 +14578,14 @@ $ python -m nbconvert machine_translation.ipynb</code></pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Generate-the-html">Generate the html<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Generate-the-html">¶</a></h3><p><strong>Save your notebook before running the next cell to generate the HTML output.</strong> Then submit your project.</p>
+<h3 id="Generate-the-html">Generate the html<a class="anchor-link" href="#Generate-the-html">&#182;</a></h3><p><strong>Save your notebook before running the next cell to generate the HTML output.</strong> Then submit your project.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Save before you run this cell!</span>
@@ -14708,14 +14602,16 @@ $ python -m nbconvert machine_translation.ipynb</code></pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt output_prompt">Out[46]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>['[NbConvertApp] Converting notebook machine_translation.ipynb to html',
- '[NbConvertApp] Writing 305996 bytes to machine_translation.html']</pre>
+<pre>[&#39;[NbConvertApp] Converting notebook machine_translation.ipynb to html&#39;,
+ &#39;[NbConvertApp] Writing 383318 bytes to machine_translation.html&#39;,
+ &#39;[NbConvertApp] Converting notebook machine_translation-zh.ipynb to html&#39;,
+ &#39;[NbConvertApp] Writing 328614 bytes to machine_translation-zh.html&#39;]</pre>
 </div>
 
 </div>
@@ -14727,17 +14623,16 @@ $ python -m nbconvert machine_translation.ipynb</code></pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Optional-Enhancements">Optional Enhancements<a class="anchor-link" href="https://view03cdc2fb.udacity-student-workspaces.com/files/machine_translation.html#Optional-Enhancements">¶</a></h2><p>This project focuses on learning various network architectures for machine translation, but we don't evaluate the models according to best practices by splitting the data into separate test &amp; training sets -- so the model accuracy is overstated. Use the <a href="http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html"><code>sklearn.model_selection.train_test_split()</code></a> function to create separate training &amp; test datasets, then retrain each of the models using only the training set and evaluate the prediction accuracy using the hold out test set. Does the "best" model change?</p>
+<h2 id="Optional-Enhancements">Optional Enhancements<a class="anchor-link" href="#Optional-Enhancements">&#182;</a></h2><p>This project focuses on learning various network architectures for machine translation, but we don't evaluate the models according to best practices by splitting the data into separate test &amp; training sets -- so the model accuracy is overstated. Use the <a href="http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html"><code>sklearn.model_selection.train_test_split()</code></a> function to create separate training &amp; test datasets, then retrain each of the models using only the training set and evaluate the prediction accuracy using the hold out test set. Does the "best" model change?</p>
 
 </div>
 </div>
 </div>
     </div>
   </div>
-
+</body>
 
  
 
 
-
-</body></html>
+</html>
