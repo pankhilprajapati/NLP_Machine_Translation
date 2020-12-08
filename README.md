@@ -1,6 +1,11 @@
 # Introduction
 In this notebook, you will build a deep neural network that functions as part of an end-to-end machine translation pipeline. Your completed pipeline will accept English text as input and return the French translation.
 
+# Machine Translation with RNNs
+Below is the example how normal machine translation work seq2seq 
+
+<img src="images/translation.gif" width="100%" align="top-left" alt="" title="RNN" />
+
 # Setup
 
 This project requires GPU acceleration to run efficiently. Support is available to use either of the following two methods for accessing GPU-enabled cloud computing resources.
