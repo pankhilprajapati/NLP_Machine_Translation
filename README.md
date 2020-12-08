@@ -4,7 +4,7 @@ In this notebook, you will build a deep neural network that functions as part of
 # Machine Translation with RNNs
 Below is the example how normal machine translation work seq2seq 
 
-<img src="images/translation.gif" width="100%" align="top-left" alt="" title="RNN" />
+<img src="images/nmt-model-fast.gif.gif" width="100%" align="top-left" alt="" title="RNN" />
 
 # Setup
 
